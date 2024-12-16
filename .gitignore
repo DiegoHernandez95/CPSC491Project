@@ -1,0 +1,27 @@
+# Build outputs
+bin/
+obj/
+
+# Cache directory (will be generated on first run)
+cache/
+
+# User-specific files
+*.user
+*.suo
+.vs/
+.vscode/
+
+# User-created decks
+Decks/
+
+# Debug/Release specific
+[Dd]ebug/
+[Rr]elease/
+
+# Temporary files
+*.tmp
+*.log
+
+# IDE specific
+*.sln.docstates
+*.userprefs
