@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="TCGHelper4.CreateDeckWindow"
+        Title="CreateDeckWindow"
+        Width="600" Height="200">
+
+        <Window.Styles>
+        <Style Selector="TextBox">
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+        </Style>
+        <Style Selector="Button">
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="Gray"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+        </Style>
+    </Window.Styles>
+
+        <StackPanel>
+          <TextBlock Margin="50 20"> Enter Deck Name: </TextBlock>
+          <TextBox  Name="DeckNameTextBox" Watermark="EX: Super Cool Deck Name" Width="500" HorizontalAlignment="Left" Margin="49 0 0 0"/>
+          <Button x:Name="SubmitButton" Content="Submit" Click="SubmitButton_Click" Margin="50 20"/>
+        </StackPanel>
+</Window>
